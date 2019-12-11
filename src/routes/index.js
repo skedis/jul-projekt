@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-
 const express = require('express');
 
 const router = express.Router();
@@ -13,7 +12,7 @@ router.get('/', (req, res) => {
       res.status(500).send(err);
     }
 
-    res.render('index', result);
+    res.render('index', { gifts: result });
   });
 });
 
