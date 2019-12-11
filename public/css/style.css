@@ -9,6 +9,9 @@
   background-color: rgb(179, 7, 0);
   height: 20vh;
 
+  /* Find better solution later */
+  overflow: hidden;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +34,7 @@
 }
 
 .gift-card:hover {
-  box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2);
 }
 
 .gift-info {
