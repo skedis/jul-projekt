@@ -1,8 +1,12 @@
-/* Christopher G 17TEK-S */
+/*
+  Christopher G
+  17 TEK-S
+*/
+
 const express = require('express');
 const path = require('path');
 const mysql = require('mysql');
-const index = require('./src/routes/index');
+const index = require('./routes/index');
 
 const app = express();
 const port = process.env.PORT || '8000';
@@ -31,7 +35,7 @@ global.db = db;
 app.use(express.static(path.join(__dirname, '/public/')));
 
 // Setting up view engine
-app.set('views', path.join(__dirname, '/src/views'));
+app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
 // Routes

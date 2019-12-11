@@ -5,12 +5,13 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.top-bar {
+
+/* Header */
+#top-bar {
   background-color: rgb(195, 0, 34);
   height: 15vh;
 
-  /* Might find a better solution later */
-  overflow: hidden;
+  overflow: hidden; /* Might look for a better solution later */
 
   display: flex;
   justify-content: center;
@@ -23,8 +24,10 @@
 
   text-shadow: 1px 1px black;
 }
+/* ----- */
 
-/* Gift related */
+
+/* Gift */
 .gift-card {
   width: 30vw;
   margin: 12px;
@@ -46,6 +49,8 @@
 }
 /* ----- */
 
+
+/* Footer */
 #footer {  
   width: 100%;
   height: 5vh;
@@ -58,3 +63,28 @@
   color: rgb(108, 117, 125);
   text-align: center;
 }
+/* ----- */
+
+
+/* Scrollbar */
+::-webkit-scrollbar
+{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+  background: rgba(0, 0, 0, 0.6);
+}
+/* ----- */
