@@ -1,3 +1,44 @@
 * {
-  background: rgb(209, 209, 209);
+  margin: 0;
+  padding: 0;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.top-bar {
+  background-color: rgb(179, 7, 0);
+  height: 20vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 3.2em;
+
+  text-shadow: 1px 1px black;
+}
+
+/* Gift related */
+.gift-card {
+  width: 30vw;
+  margin: 12px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+.gift-card:hover {
+  box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
+}
+
+.gift-info {
+  padding: 2px 16px;
+}
+
+.gift-title {
+  font-weight: bold;
+}
+/* ----- */
