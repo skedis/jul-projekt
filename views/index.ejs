@@ -23,6 +23,13 @@
     <script>
         let audio = document.getElementById("audio_player");
         audio.volume = 0.3;
+
+        // DEBUG DESCRIPTIONS
+        let divs = document.getElementsByClassName('gift-description');
+
+        [].slice.call(divs).forEach(function (div) {
+            div.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+        });
     </script>
     <!-- DELETE/CHANGE LATER -->
 </body>
