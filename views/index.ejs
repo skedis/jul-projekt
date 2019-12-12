@@ -9,9 +9,12 @@
     <div id="top-bar">
         <h1 class="title">Årets Julklappar</h1>
     </div>
-    <% gifts.forEach(gift => { %>
-        <%- include('partials/gift', { gift: gift }); %>
-    <% }); %>
+
+    <div class="container">
+        <% gifts.forEach(gift => { %>
+            <%- include('partials/gift', { gift: gift }); %>
+        <% }); %>
+    </div>
 
     <%- include('partials/footer.ejs'); %>
 

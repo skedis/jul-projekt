@@ -27,9 +27,18 @@
 /* ----- */
 
 
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+
 /* Gift */
 .gift-card {
-  width: 30vw;
+  width: 15vw;
+  min-width: 350px;
+
   margin: 12px;
   padding: 10px;
 
@@ -39,6 +48,12 @@
 
 .gift-card:hover {
   box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2);
+}
+
+.gift-image {
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 
 .gift-info {
@@ -89,9 +104,3 @@
   background: rgba(0, 0, 0, 0.6);
 }
 /* ----- */
-
-img {
-  width: 80%;
-  display: block;
-  margin: auto;
-}
