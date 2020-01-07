@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
-    <%- include('partials/head'); %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jul Projekt</title>
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 
 <body>
     <div id="top-bar">
         <h1 class="title">Årets Julklappar</h1>
-        <button onclick="randomGift()">DEBUG Random</button>
+        <button onclick="randomGift()">Hitta din julklapp!</button>
     </div>
 
     <div class="container">
@@ -17,26 +21,13 @@
         <% }); %>
     </div>
 
-    <%- include('partials/footer.ejs'); %>
+    <footer id="footer">
+        <p>&copy; Copyright 2019 me :)</p>
+    </footer>
 
-    <!-- DElETE/CHANGE LATER  -->
-    <audio id="audio_player" autoplay>
-        <source src="/audio/CBT.mp3" type="audio/mp3">
-    </audio>
-
-    <script>
-        let audio = document.getElementById("audio_player");
-        audio.volume = 0.3;
-
-        // DEBUG DESCRIPTIONS
-        let divs = document.getElementsByClassName('gift-description');
-
-        [].slice.call(divs).forEach(function (div) {
-            div.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-        });
-    </script>
-    <!-- DELETE/CHANGE LATER -->
-    <script src="/javascript/random_gift.js"></script>
+    <!-- Scripts -->
+    <script src="public/javascript/random_gift.js"></script>
+    <script src="public/javascript/background_music.js"></script>
 </body>
 
 </html>

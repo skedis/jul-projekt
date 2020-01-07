@@ -1,5 +1,5 @@
-<div class="gift-card">
-    <img class="gift-image" src="/images/<%= gift.image %>" alt="Gift">
+<div onclick="location.href='<%= gift.link %>'" class="gift-card" style="cursor: pointer;">
+    <img class="gift-image" src="public/images/<%= gift.image %>" alt="Gift">
     <div class="gift-info">
         <h3 class="gift-title"><%= gift.year %> - <%= gift.name %></h3>
         <p class="gift-description"><%= gift.description %></p>

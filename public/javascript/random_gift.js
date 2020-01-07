@@ -1,18 +1,3 @@
-
-/* eslint-disable no-undef */
-/* eslint-disable prefer-const */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-restricted-syntax */
-
-/*
-   ;;;;;                   ;;;;;
-   ;;;;;                   ;;;;;
-   ;;;;;   (╯°□°)╯︵ ┻━┻   ;;;;;
- ..;;;;;..               ..;;;;;..
-  ':::::'                 ':::::'
-    ':`                     ':`
-*/
-
 const cardHightlightID = 'card-highlight';
 
 function randomGift() {
@@ -32,16 +17,3 @@ function randomGift() {
   // Smooth scroll to the chosen gift
   randomCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
-
-/*
-for (let i = 0; i < gifts.length; i++) {
-  setTimeout(() => {
-    gifts[i].classList.add('card-highlight');
-
-    // Remove after 1000 miliseconds
-    setTimeout(() => {
-      gifts[i].classList.remove('card-highlight');
-    }, 500);
-  }, i * 500);
-}
-*/
